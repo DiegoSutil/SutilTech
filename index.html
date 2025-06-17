@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Modern Green & White -->
-    <!-- Application Structure Plan: The site is structured as a single-page application to provide a fluid and modern user experience. The information architecture follows a logical narrative flow for a potential customer: 1. Hero section with a clear value proposition and primary Call-to-Action (CTA). 2. A detailed 'Services' section with icons to quickly communicate offerings. 3. An 'About' section to build trust and humanize the brand. 4. A 'Depoimentos' (Testimonials) section to showcase client satisfaction. 5. A 'Why Choose Us' section to highlight key benefits (implicitly covered in About section). 6. A comprehensive 'Contact' section with multiple contact methods to maximize lead generation. This structure is designed to guide the user from awareness to conversion efficiently. -->
-    <!-- Visualization & Content Choices: Report Info: IT services (support, formatting, OS install, maintenance, software/hardware installation, virus removal, backup, remote/onsite support, custom PC assembly) and positive client feedbacks. Goal: Inform, persuade, and build trust. Viz/Method: Used structured HTML with Tailwind CSS and Unicode icons (e.g., wrench, checkmark, computer, shield, star) instead of images or SVG to represent services and ratings. This ensures fast loading and a clean, modern aesthetic. Testimonials are presented in a grid for readability. Interaction: Smooth scrolling navigation via JavaScript enhances the single-page experience, now including the new 'Depoimentos' section. Buttons have clear hover and active states. Justification: This approach is user-friendly, clearly presents the services, builds credibility through social proof, and directs users towards contacting the business. It avoids complex visualizations which are unnecessary for this type of informational site. Library/Method: Vanilla JS and Tailwind CSS. -->
+    <!-- Application Structure Plan: The site is structured as a single-page application to provide a fluid and modern user experience. The information architecture follows a logical narrative flow for a potential customer: 1. Hero section with a clear value proposition and primary Call-to-Action (CTA). 2. A detailed 'Services' section with icons to quickly communicate offerings. 3. An 'About' section to build trust and humanize the brand. 4. A 'Depoimentos' (Testimonials) section to showcase client satisfaction. 5. A 'Why Choose Us' section to highlight key benefits (implicitly covered in About section). 6. A comprehensive 'Contact' section with multiple contact methods to maximize lead generation, now with a functional form. This structure is designed to guide the user from awareness to conversion efficiently. -->
+    <!-- Visualization & Content Choices: Report Info: IT services (support, formatting, OS install, maintenance, software/hardware installation, virus removal, backup, remote/onsite support, custom PC assembly) and positive client feedbacks. Goal: Inform, persuade, and build trust, and enable direct contact. Viz/Method: Used structured HTML with Tailwind CSS and Unicode icons (e.g., wrench, checkmark, computer, shield, star) instead of images or SVG to represent services and ratings. This ensures fast loading and a clean, modern aesthetic. Testimonials are presented in a grid for readability. Interaction: Smooth scrolling navigation via JavaScript enhances the single-page experience. Buttons have clear hover and active states. The contact form now integrates with an external form submission service (Formspree example) to actually send messages. Justification: This approach is user-friendly, clearly presents the services, builds credibility through social proof, and directly enables lead generation via a functional contact form. It avoids complex visualizations which are unnecessary for this type of informational site. Library/Method: Vanilla JS and Tailwind CSS for frontend, external form service for backend. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
@@ -202,18 +202,18 @@
                     <div>
                         <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
                         <div class="space-y-4">
-                            <a href="https://wa.me/554299667703" target="_blank" class="flex items-center group">
+                            <a href="https://wa.me/5542999667703" target="_blank" class="flex items-center group">
                                 <span class="text-emerald-600 text-2xl mr-4">&#128241;</span>
                                 <div>
                                     <p class="font-semibold">WhatsApp</p>
-                                    <p class="text-gray-600 group-hover:text-emerald-600 transition-colors">(42) 9996-67703</p>
+                                    <p class="text-gray-600 group-hover:text-emerald-600 transition-colors">(42) 9 9966-7703</p>
                                 </div>
                             </a>
-                            <a href="mailto:diegomachadosutil024@gmail.com.com.br" class="flex items-center group">
+                            <a href="mailto:diegosutil1533@gmail.com" class="flex items-center group">
                                 <span class="text-emerald-600 text-2xl mr-4">&#9993;</span>
                                 <div>
                                     <p class="font-semibold">E-mail</p>
-                                    <p class="text-gray-600 group-hover:text-emerald-600 transition-colors">Diegomachadosutil024@gmail.com</p>
+                                    <p class="text-gray-600 group-hover:text-emerald-600 transition-colors">diegomachadosutil024@gmail.com</p>
                                 </div>
                             </a>
                             <div class="flex items-center">
@@ -225,11 +225,12 @@
                             </div>
                         </div>
                     </div>
-                    <form onsubmit="alert('Mensagem enviada com sucesso! Em breve entraremos em contato.'); return false;">
+                    <!-- Form updated to use Formspree for submission -->
+                    <form action="https://formspree.io/f/xdkzzqby" method="POST">
                         <h3 class="text-2xl font-bold mb-6">Ou envie uma mensagem</h3>
                         <div class="space-y-4">
                             <input type="text" name="name" placeholder="Seu Nome" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500" required>
-                            <input type="email" name="email" placeholder="Seu E-mail" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500" required>
+                            <input type="email" name="_replyto" placeholder="Seu E-mail" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500" required>
                             <textarea name="message" rows="4" placeholder="Sua Mensagem" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500" required></textarea>
                             <button type="submit" class="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition duration-300">Enviar Mensagem</button>
                         </div>
