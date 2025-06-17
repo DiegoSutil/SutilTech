@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Modern Green & White -->
     <!-- Application Structure Plan: The site is structured as a single-page application to provide a fluid and modern user experience. The information architecture follows a logical narrative flow for a potential customer: 1. Hero section with a clear value proposition and primary Call-to-Action (CTA). 2. A detailed 'Services' section with icons to quickly communicate offerings. 3. An 'About' section to build trust and humanize the brand. 4. A 'Depoimentos' (Testimonials) section to showcase client satisfaction. 5. A 'Why Choose Us' section to highlight key benefits (implicitly covered in About section). 6. A comprehensive 'Contact' section with multiple contact methods to maximize lead generation, now with a functional form. This structure is designed to guide the user from awareness to conversion efficiently. -->
-    <!-- Visualization & Content Choices: Report Info: IT services (support, formatting, OS install, maintenance, software/hardware installation, virus removal, backup, remote/onsite support, custom PC assembly) and positive client feedbacks. Goal: Inform, persuade, and build trust, and enable direct contact. Viz/Method: Used structured HTML with Tailwind CSS and Unicode icons (e.g., wrench, checkmark, computer, shield, star) instead of images or SVG to represent services and ratings. This ensures fast loading and a clean, modern aesthetic. Testimonials are presented in a grid for readability. Interaction: Smooth scrolling navigation via JavaScript enhances the single-page experience. Buttons have clear hover and active states. The contact form now integrates with an external form submission service (Formspree example) to actually send messages. Justification: This approach is user-friendly, clearly presents the services, builds credibility through social proof, and directly enables lead generation via a functional contact form. It avoids complex visualizations which are unnecessary for this type of informational site. Library/Method: Vanilla JS and Tailwind CSS for frontend, external form service for backend. -->
+    <!-- Visualization & Content Choices: Report Info: IT services (support, formatting, OS install, maintenance, software/hardware installation, virus removal, backup, remote/onsite support, custom PC assembly) and positive client feedbacks. Goal: Inform, persuade, and build trust, and enable direct contact. Viz/Method: Used structured HTML with Tailwind CSS and Unicode icons (e.g., wrench, checkmark, computer, shield, star, WhatsApp emoji) instead of images or SVG to represent services and ratings. This ensures fast loading and a clean, modern aesthetic. Testimonials are presented in a grid for readability. A floating WhatsApp button provides persistent access to direct communication. The contact form now integrates with an external form submission service (Formspree example) to actually send messages. The placeholder image in the 'About' section has been replaced with the user-provided image from GitHub. Justification: This approach is user-friendly, clearly presents the services, builds credibility through social proof, and directly enables lead generation via a functional contact form and a highly accessible WhatsApp button. The updated image provides a personalized and professional touch. It avoids complex visualizations which are unnecessary for this type of informational site. Library/Method: Vanilla JS and Tailwind CSS for frontend, external form service for backend. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
@@ -127,7 +127,7 @@
         <section id="about" class="py-20 bg-white">
             <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div class="fade-in-section">
-                    <img src="https://github.com/DiegoSutil/SutilTech/blob/f97eec03c0bbad8f2d20bba687596aa9ee0b9178/images/Gemini_Generated_Image_w74p2rw74p2rw74p.png" alt="Técnico de informática trabalhando" class="rounded-xl shadow-lg w-full">
+                    <img src="https://github.com/DiegoSutil/SutilTech/blob/e2b11421d90d8752cb356c3db3c7dda6ed1a2f84/images/Gemini_Generated_Image_w74p2rw74p2rw74p.png" alt="SutilTech equipe trabalhando" class="rounded-xl shadow-lg w-full">
                 </div>
                 <div class="fade-in-section">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sobre a SutilTech</h2>
@@ -240,6 +240,11 @@
             </div>
         </section>
     </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5542999667703" target="_blank" class="fixed bottom-6 right-6 bg-emerald-600 text-white p-4 rounded-full shadow-lg hover:bg-emerald-700 transition-colors duration-300 transform hover:scale-105 z-50">
+        <span class="text-3xl">&#128241;</span> <!-- Emoji de celular para WhatsApp -->
+    </a>
 
     <footer class="bg-gray-800 text-white">
         <div class="container mx-auto px-6 py-8 text-center">
